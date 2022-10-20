@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+
+    <!-- ********************* html ********************* -->
+
+    <h1>Demo Game Web</h1>
+
+    <p>This demo shows you the basics to call our game routines using a
+    JavaScript module based on Wasm technology... Here, the default game is
+    created at startup and then it is printed as text within a <em>pre</em>
+    element.</p>
+
+    <div align="center">
+        <canvas id="mycanvas" width="400px" height="400px"></canvas>
+
+    <hr>
+    <p><input type="button" onClick="javascript:undo()"value="Undo"> 
+        <input type="button" onClick="javascript:redo()"value="Redo">
+        <input type="button" onClick="javascript:solve()"value="Solve"> 
+        <input type="button" onClick="javascript:restart()"value="Restart">
+        <input type="button" onClick="javascript:quit()"value="QUIT...">
+    </p>
+    <p><em>aurelien.esnard@u-bordeaux.fr, 2022.</em></p>
+
+    <!-- ********************* script ********************* -->
+
+    <script src="game.js"></script>
+    <script src="demo.js"> </script>
+
+</body></html>
